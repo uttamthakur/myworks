@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE RelativeLayout [<!ELEMENT RelativeLayout (LinearLayout)*><!ATTLIST RelativeLayoutxmlns:android CDATA #REQUIREDxmlns:app CDATA #REQUIREDxmlns:tools CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:paddingBottom CDATA #REQUIREDandroid:paddingLeft CDATA #REQUIREDandroid:paddingRight CDATA #REQUIREDandroid:paddingTop CDATA #REQUIREDapp:layout_behavior CDATA #REQUIREDtools:context CDATA #REQUIREDtools:showIn CDATA #REQUIRED><!ELEMENT LinearLayout (ImageView|EditText)*><!ATTLIST LinearLayoutandroid:orientation CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIRED><!ELEMENT ImageView (#PCDATA)><!ATTLIST ImageViewandroid:layout_height CDATA #REQUIREDandroid:layout_weight CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:src CDATA #REQUIRED><!ELEMENT EditText (#PCDATA)><!ATTLIST EditTextandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:layout_weight CDATA #REQUIRED>]>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.uttam.app2.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Happy"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:Layout_alignParentBottom="true"
+        android:Layout_alignParentLeft="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Birthday" />
+
+
+</RelativeLayout>
